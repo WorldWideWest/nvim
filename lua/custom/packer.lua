@@ -20,4 +20,7 @@ return require("packer").startup(function(use)
 	use({ "williamboman/mason-lspconfig.nvim" })
 
 	use({ "stevearc/conform.nvim" })
+
+	use({ "nvim-lua/plenary.nvim" })
+	use({ "ThePrimeagen/harpoon" })
 end)
