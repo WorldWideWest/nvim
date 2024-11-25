@@ -22,5 +22,11 @@ return require("packer").startup(function(use)
 	use({ "stevearc/conform.nvim" })
 
 	use({ "nvim-lua/plenary.nvim" })
-	use({ "ThePrimeagen/harpoon" })
+
+	use({ "lewis6991/gitsigns.nvim" })
+
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
 end)
