@@ -22,29 +22,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
-require("mason").setup()
-require("mason-lspconfig").setup({
-	ensure_installed = {
-		"lua_ls",
-		"omnisharp",
-		"pylsp",
-		"yamlls",
-		"eslint",
-		"sqlls",
-		"ast_grep",
-		"html",
-		"jsonls",
-		"harper_ls",
-		"powershell_es",
-		"bashls",
-	},
-	handlers = {
-		function(server_name)
-			require("lspconfig")[server_name].setup({})
-		end,
-	},
-})
-
 local cmp = require("cmp")
 
 cmp.setup({
@@ -54,6 +31,8 @@ cmp.setup({
 		{ name = "lua_ls" },
 		{ name = "html" },
 		{ name = "omnisharp" },
+		{ name = "pyright" },
+		{ name = "dartls" },
 	},
 
 	mapping = cmp.mapping.preset.insert({
