@@ -31,7 +31,7 @@ cmp.setup({
 		{ name = "lua_ls" },
 		{ name = "html" },
 		{ name = "omnisharp" },
-		{ name = "pyright" },
+		{ name = "pylsp" },
 		{ name = "dartls" },
 	},
 

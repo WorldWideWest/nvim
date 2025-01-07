@@ -12,7 +12,8 @@ require("mason-lspconfig").setup({
 		"harper_ls",
 		"powershell_es",
 		"bashls",
-		"pyright",
+		"pylsp",
+		"jinja_lsp",
 	},
 	handlers = {
 		function(server_name)
@@ -25,9 +26,9 @@ require("mason-lspconfig").setup({
 
 require("mason-tool-installer").setup({
 	ensure_installed = {
+		"isort",
 		"debugpy",
 		"mypy",
-		"pylint",
 		"black",
 		"isort",
 		"csharpier",

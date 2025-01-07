@@ -10,6 +10,7 @@ require("nvim-treesitter.configs").setup({
 		"c_sharp",
 		"python",
 		"go",
+		"json",
 		"javascript",
 		"typescript",
 		"jsdoc",
